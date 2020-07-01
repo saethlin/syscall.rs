@@ -13,6 +13,7 @@
 
 #![deny(warnings)]
 #![feature(asm)]
+#![feature(llvm_asm)]
 #![no_std]
 
 #[cfg(test)]
