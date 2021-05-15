@@ -46,28 +46,28 @@ jobs:
           target: ${{ matrix.target }}
           override: true
 
-      # omit tests
+      # omit tests on BSD
       - uses: actions-rs/cargo@v1
-        if: matrix.target == '*bsd*'
+        if: matrix.target == 'x86_64-unknown-freebsd'
         with:
           use-cross: true
           command: check
           args: --target ${{ matrix.target }}
 
       - uses: actions-rs/cargo@v1
-        if: matrix.target != '*bsd*'
+        if: matrix.target != 'x86_64-unknown-freebsd'
         with:
           use-cross: true
           command: test
           args: --target ${{ matrix.target }}
       - uses: actions-rs/cargo@v1
-        if: matrix.target != '*bsd*'
+        if: matrix.target != 'x86_64-unknown-freebsd'
         with:
           use-cross: true
           command: run
           args: --target ${{ matrix.target }} --release --example hello
       - uses: actions-rs/cargo@v1
-        if: matrix.target != '*bsd*'
+        if: matrix.target != 'x86_64-unknown-freebsd'
         with:
           use-cross: true
           command: test
