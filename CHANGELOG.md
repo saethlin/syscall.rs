@@ -5,6 +5,23 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [v0.2.4] - 2021-05-15
+
+### Added
+
+- 64-bit RISC-V support
+- Linux 5.12 system calls
+
+### Fixed
+
+- cross-compilation to 32-bit ARM
+
+## [v0.2.3] - 2020-07-28
+
+### Changed
+
+- switch from `asm!` to `llvm_asm!`
+
 ## [v0.2.2] - 2017-11-06
 
 ### Added
@@ -83,7 +100,9 @@ Initial release. Forked from [syscall] v0.2.1.
 
 - Support for x86_64 FreeBSD
 
-[Unreleased]: https://github.com/japaric/syscall.rs/compare/v0.2.2...HEAD
+[Unreleased]: https://github.com/japaric/syscall.rs/compare/v0.2.4...HEAD
+[v0.2.4]: https://github.com/japaric/syscall.rs/compare/v0.2.3...v0.2.4
+[v0.2.3]: https://github.com/japaric/syscall.rs/compare/v0.2.2...v0.2.3
 [v0.2.2]: https://github.com/japaric/syscall.rs/compare/v0.2.1...v0.2.2
 [v0.2.1]: https://github.com/japaric/syscall.rs/compare/v0.2.0...v0.2.1
 [v0.2.0]: https://github.com/japaric/syscall.rs/compare/v0.1.5...v0.2.0
