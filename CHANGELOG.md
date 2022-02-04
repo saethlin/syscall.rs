@@ -5,6 +5,19 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [v0.2.6] - 2022-02-04
+
+### Changed
+
+- architectures aarch64, riscv64 and x86_64 now use the stable `asm!` macro. this crate will work on
+  stable Rust 1.59+ when compiled to those architectures
+
+## [v0.2.5] - 2021-08-14
+
+### Added
+
+- Added support for Android
+
 ## [v0.2.4] - 2021-05-15
 
 ### Added
@@ -100,7 +113,9 @@ Initial release. Forked from [syscall] v0.2.1.
 
 - Support for x86_64 FreeBSD
 
-[Unreleased]: https://github.com/japaric/syscall.rs/compare/v0.2.4...HEAD
+[Unreleased]: https://github.com/japaric/syscall.rs/compare/v0.2.6...HEAD
+[v0.2.6]: https://github.com/japaric/syscall.rs/compare/v0.2.5...v0.2.6
+[v0.2.5]: https://github.com/japaric/syscall.rs/compare/v0.2.4...v0.2.5
 [v0.2.4]: https://github.com/japaric/syscall.rs/compare/v0.2.3...v0.2.4
 [v0.2.3]: https://github.com/japaric/syscall.rs/compare/v0.2.2...v0.2.3
 [v0.2.2]: https://github.com/japaric/syscall.rs/compare/v0.2.1...v0.2.2

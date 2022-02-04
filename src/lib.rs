@@ -8,6 +8,16 @@
 // except according to those terms.
 
 //! Raw system calls for Rust.
+//!
+//! NOTE: Only these architectures have been ported to the stable (as of 1.59) `asm!` macro
+//!
+//! - aarch64
+//! - riscv64
+//! - x86_64 
+//! 
+//! All the other architectures use the deprecated `llvm_asm!` macro which has already been removed.
+//! To use this crate with those architectures you'll need to use an older nightly like
+//! `nightly-2022-01-14`
 
 // Reference http://man7.org/linux/man-pages/man2/syscall.2.html
 
