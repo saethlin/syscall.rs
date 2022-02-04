@@ -43,7 +43,8 @@ jobs:
       - uses: actions-rs/toolchain@v1
         with:
           profile: minimal
-          toolchain: nightly
+          # asm! is stable and llvm_asm! still exists
+          toolchain: nightly-2022-01-14
           target: ${{ matrix.target }}
           override: true
 
