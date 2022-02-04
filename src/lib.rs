@@ -11,8 +11,18 @@
 
 // Reference http://man7.org/linux/man-pages/man2/syscall.2.html
 
+#![allow(deprecated)] // llvm_asm!
 #![deny(warnings)]
 #![no_std]
+#![cfg_attr(any(
+    target_arch = "arm",
+    target_arch = "mips",
+    target_arch = "mips64",
+    target_arch = "powerpc",
+    target_arch = "powerpc64",
+    target_arch = "sparc64",
+    target_arch = "x86"
+), feature(llvm_asm))]
 
 #[cfg(test)]
 extern crate std;
