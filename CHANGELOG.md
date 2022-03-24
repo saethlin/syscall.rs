@@ -5,6 +5,12 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [v0.2.7] - 2022-03-24
+
+### Added
+
+- Added support for Aarch64 macOS (M1)
+
 ## [v0.2.6] - 2022-02-04
 
 ### Changed
@@ -113,7 +119,8 @@ Initial release. Forked from [syscall] v0.2.1.
 
 - Support for x86_64 FreeBSD
 
-[Unreleased]: https://github.com/japaric/syscall.rs/compare/v0.2.6...HEAD
+[Unreleased]: https://github.com/japaric/syscall.rs/compare/v0.2.7...HEAD
+[v0.2.7]: https://github.com/japaric/syscall.rs/compare/v0.2.6...v0.2.7
 [v0.2.6]: https://github.com/japaric/syscall.rs/compare/v0.2.5...v0.2.6
 [v0.2.5]: https://github.com/japaric/syscall.rs/compare/v0.2.4...v0.2.5
 [v0.2.4]: https://github.com/japaric/syscall.rs/compare/v0.2.3...v0.2.4
